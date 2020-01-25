@@ -23,11 +23,10 @@ time.sleep(1)
 text2 = driver.find_element_by_xpath("//h5[contains(text(),'name: user2')]").text
 print(text2)
 
-element2 = driver.find_element_by_xpath("//div[3]//img[1]")
+element2 = driver.find_element_by_xpath("//*[@id='content']/div/div[3]/img")
 action.move_to_element(element2).perform()
 text3 = driver.find_element_by_xpath("//h5[contains(text(),'name: user3')]").text
 print(text3)
 
 time.sleep(2)
-driver.close()
 driver.quit()

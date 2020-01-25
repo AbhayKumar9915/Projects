@@ -20,5 +20,4 @@ time.sleep(2)
 
 print(visible)
 
-driver.close()
 driver.quit()

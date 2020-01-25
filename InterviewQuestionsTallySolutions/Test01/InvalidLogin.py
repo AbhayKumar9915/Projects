@@ -16,6 +16,5 @@ time.sleep(2)
 page_title = driver.title
     
 assert page_title == "The Internet"
-    
-driver.close()
+
 driver.quit()

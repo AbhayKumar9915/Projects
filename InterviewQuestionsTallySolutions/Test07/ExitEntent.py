@@ -15,5 +15,5 @@ element = driver.find_element_by_xpath("//h3[contains(text(),'Exit Intent')]")
 action.move_to_element(element).perform()
 
 time.sleep(5)
-driver.close()
+
 driver.quit()

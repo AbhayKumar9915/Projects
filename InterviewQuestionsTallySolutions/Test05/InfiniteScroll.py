@@ -11,9 +11,8 @@ time.sleep(2)
 n = 4
 
 for i in range(0,4):
-    driver.execute_script("window.scrollTo(0, 1080)")
+    driver.execute_script("window.scrollTo(0, 1366)")
     time.sleep(3)
 
-driver.close()
 driver.quit()
 

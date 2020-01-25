@@ -25,5 +25,4 @@ if (text == "THIS IS A MODAL WINDOW"):
     print("Model not displayed on page-reload if the modal is closed once")
 
 
-driver.close()
 driver.quit()

@@ -13,4 +13,4 @@ Links = driver.find_elements_by_tag_name("img")
 for i in Links:
     print(i)
 
-driver.close()
+driver.quit()
