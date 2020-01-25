@@ -13,9 +13,17 @@ text = driver.find_element_by_xpath("//div[@class='modal-title']").text
 
 if (text == "THIS IS A MODAL WINDOW"):
     print("Model displayed")
-    
-else:
-    print("Model Not Displayed")
+
+time.sleep(2)   
+driver.find_element_by_xpath("//p[contains(text(),'Close')]").click()
+time.sleep(2)
+
+driver.refresh()
+time.sleep(2)
+
+if (text == "THIS IS A MODAL WINDOW"):
+    print("Model not displayed on page-reload if the modal is closed once")
+
 
 driver.close()
 driver.quit()
