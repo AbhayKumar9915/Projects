@@ -1,0 +1,13 @@
+from selenium import webdriver
+import time
+
+driver = webdriver.Chrome(executable_path="C:/Users/ABHAY/Selenium/chromedriver.exe")
+driver.implicitly_wait(10)
+driver.maximize_window()
+
+driver.get("http://the-internet.herokuapp.com/broken_images")
+time.sleep(2)
+
+driver.find_element_by_xpath("//div[@id='content']//img[1]").click()
+
+driver.close()
