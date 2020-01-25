@@ -14,7 +14,6 @@ driver.find_element_by_xpath("//button[@class='radius']").click()
 time.sleep(2)
 page_title = driver.title
 
-
 assert page_title == "The Internet"
 
 driver.close()
