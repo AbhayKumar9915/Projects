@@ -12,7 +12,7 @@ n = 4
 
 for i in range(0,4):
     driver.execute_script("window.scrollTo(0, 1080)")
-    time.sleep(3)
+    time.sleep(2)
 
 driver.quit()
 
