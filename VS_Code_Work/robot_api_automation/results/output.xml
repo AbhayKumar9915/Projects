@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-05-08T13:47:53.695204" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot Api Automation" source="C:\Users\ab1kumar\VS_Code_Work\robot_api_automation">
+<suite id="s1-s1" name="TestCases learning" source="C:\Users\ab1kumar\VS_Code_Work\robot_api_automation\TestCases_learning">
+<suite id="s1-s1-s1" name="TC01 Get" source="C:\Users\ab1kumar\VS_Code_Work\robot_api_automation\TestCases_learning\TC01_Get.robot">
+<test id="s1-s1-s1-t1" name="TC002_Get_Request" line="20">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-05-08T13:47:54.163164" level="INFO">Creating Session using : alias=User_Details, url=https://reqres.in/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>User_Details</arg>
+<arg>${Base_Url_02}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-05-08T13:47:54.162725" elapsed="0.304259"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2025-05-08T13:47:54.661462" level="INFO">GET Request : url=https://reqres.in/api/users/2 
+ path_url=/api/users/2 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2025-05-08T13:47:54.662091" level="INFO">GET Response : url=https://reqres.in/api/users/2 
+ status=200, reason=OK 
+ headers={'Date': 'Thu, 08 May 2025 08:17:54 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Connection': 'keep-alive', 'Cf-Ray': '93c785fc1d42f56a-MAA', 'Server': 'cloudflare', 'Content-Encoding': 'gzip', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1746682619&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=g7qg%2BA0qsGWOsuRv1dBci5Z1%2B9mpIw%2FnhdHdKiDLYrA%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1746682619&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=g7qg%2BA0qsGWOsuRv1dBci5Z1%2B9mpIw%2FnhdHdKiDLYrA%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Ratelimit-Policy': '100;w=60', 'Ratelimit-Limit': '100', 'Ratelimit-Remaining': '98', 'Ratelimit-Reset': '60', 'Etag': 'W/"152-ApQgGHL6RKwaebFlrPCYPBO1xHg"', 'Via': '1.1 vegur', 'Cache-Control': 'max-age=14400', 'Cf-Cache-Status': 'HIT', 'Age': '2412', 'Vary': 'Accept-Encoding', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=1161&amp;min_rtt=1138&amp;rtt_var=343&amp;sent=5&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=3111&amp;recv_bytes=770&amp;delivery_rate=3610882&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=65c938c22bf9d87a&amp;ts=15&amp;x=0"', 'Content-Length': '247'} 
+ body={"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral","text":"Tired of writing endless social media content? Let Content Caddy generate it for you."}} 
+ </msg>
+<msg time="2025-05-08T13:47:54.662499" level="INFO">C:\Users\ab1kumar\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-05-08T13:47:54.664493" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>User_Details</arg>
+<arg>url=/api/users/2</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-05-08T13:47:54.467628" elapsed="0.197440"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.status_code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-08T13:47:54.666014" elapsed="0.001662"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-08T13:47:54.668197" elapsed="0.001401"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${response.content}</arg>
+<arg>janet</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-05-08T13:47:54.670016" elapsed="0.000646"/>
+</kw>
+<status status="PASS" start="2025-05-08T13:47:54.161147" elapsed="0.509810"/>
+</test>
+<status status="PASS" start="2025-05-08T13:47:53.737109" elapsed="0.935975"/>
+</suite>
+<status status="PASS" start="2025-05-08T13:47:53.733241" elapsed="0.942606"/>
+</suite>
+<status status="PASS" start="2025-05-08T13:47:53.702270" elapsed="0.975627"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robot Api Automation" id="s1" pass="1" fail="0" skip="0">Robot Api Automation</stat>
+<stat name="TestCases learning" id="s1-s1" pass="1" fail="0" skip="0">Robot Api Automation.TestCases learning</stat>
+<stat name="TC01 Get" id="s1-s1-s1" pass="1" fail="0" skip="0">Robot Api Automation.TestCases learning.TC01 Get</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

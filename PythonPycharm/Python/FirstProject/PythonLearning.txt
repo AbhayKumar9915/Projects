@@ -1,0 +1,56 @@
+Python programming language used Interpreter as translator where Java uses compiler to translate code to machine language
+Python is case sensetive language
+
+What is python and why to use python !
+    1.Python is simple and easy to understand
+    2.Free and open source
+    3.High level language
+    4.Portable (Same code works in Windows/Linux/Mac)
+    5.Versatile language - Using python ML,AI,Web development(Django) and games can be explored
+
+Variable
+    A variable is a name given to memory location in a program
+    name = "abhay", string
+    age = 31, int
+    height = 1.64, float
+
+Data Types
+    Integers: +ve and -ve num including 0
+    String
+    Float
+    Boolean: True or False
+    None
+
+Keywords
+    and,assert,def,True,if.... reserved words in python
+
+Operators
+    Arithmatic: +,-,*,/,%,**
+    Relational: ==,!=,>,<,>=,<=
+    Assignment: =,+=,-=,*=,/=,%=,**=
+    Logical: not, and, or
+
+NoSuchElementException & StaleElementReferenceException
+The NoSuchElementException is thrown when the element you are attempting to find is not in the DOM
+StaleElementReferenceException is when you find an element, the DOM gets modified then you reference the WebElement
+
+Latest Questions:
+Waits in selenium python
+How to generate reports in selenium python
+how to handle nosuchelemnetexception
+thread.sleep()
+how to handle synchronization
+how to debug python/selenium code
+difference between find_element and find_elements
+how to handle alert/popup in selenium
+how to handle exceptions in python and example
+what is conftest.py in pytest
+
+What is verification and validation
+Xpath (syntaxes)
+Count char in string
+
+Difference between bug and defect
+Find the length of longest consecutive sequence: [100, 4, 101, 102, 1, 3, 103, 2, 104]
+Explain framework in details
+How to perform drag and drop in selenium

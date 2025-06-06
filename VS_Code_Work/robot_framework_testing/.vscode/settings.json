@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "C:\\Users\\Public\\Programs\\tts4\\lib",
+        "c:/Users/ab1kumar/VS_Code_Work/robot_framework_web_automation/."
+    ]
+}

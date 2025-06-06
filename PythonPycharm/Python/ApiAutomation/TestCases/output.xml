@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-04-07T17:28:43.028709" rpa="false" schemaversion="5">
+<suite id="s1" name="TC2 POST" source="C:\Users\ab1kumar\Pycharm Projects\Python\ApiAutomation\TestCases\TC2_POST.robot">
+<test id="s1-t1" name="Put_UsersInfo" line="9">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-04-07T17:28:43.658753" level="INFO">Creating Session using : alias=mysession, url=https://reqres.in, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>mysession</arg>
+<arg>${base_url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-04-07T17:28:43.658485" elapsed="0.389868"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-07T17:28:44.049795" level="INFO">${body} = {'name': 'Abhay job=leader'}</msg>
+<var>${body}</var>
+<arg>name=Abhay job=leader</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-07T17:28:44.049222" elapsed="0.000627"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-07T17:28:44.050798" level="INFO">${header} = {'Content-Type': 'application/json'}</msg>
+<var>${header}</var>
+<arg>Content-Type=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-07T17:28:44.050485" elapsed="0.000353"/>
+</kw>
+<kw name="Post Request" owner="RequestsLibrary">
+<msg time="2025-04-07T17:28:44.051412" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+<msg time="2025-04-07T17:28:44.470109" level="INFO">POST Request : url=https://reqres.in/api/users 
+ path_url=/api/users 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '28'} 
+ body={"name": "Abhay job=leader"} 
+ </msg>
+<msg time="2025-04-07T17:28:44.470293" level="INFO">POST Response : url=https://reqres.in/api/users 
+ status=201, reason=Created 
+ headers={'Date': 'Mon, 07 Apr 2025 11:58:44 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Connection': 'keep-alive', 'Cf-Ray': '92c95ad5fafd7fdd-MAA', 'Server': 'cloudflare', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1744027124&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=VcoYUm3%2BgGOJBausfdU8vVPSkMbjXN8eFciZKg%2BOCjs%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1744027124&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=VcoYUm3%2BgGOJBausfdU8vVPSkMbjXN8eFciZKg%2BOCjs%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"4d-0Zfi0dm+Fkav/MQuhGZNHt9A4pQ"', 'Via': '1.1 vegur', 'Cf-Cache-Status': 'DYNAMIC', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=491&amp;min_rtt=491&amp;rtt_var=184&amp;sent=5&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=3111&amp;recv_bytes=871&amp;delivery_rate=8884381&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=769b38a06165f834&amp;ts=305&amp;x=0"', 'Content-Length': '77'} 
+ body={"name":"Abhay job=leader","id":"797","createdAt":"2025-04-07T11:58:44.367Z"} 
+ </msg>
+<msg time="2025-04-07T17:28:44.470410" level="INFO">C:\Users\ab1kumar\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-04-07T17:28:44.470990" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<var>${response}</var>
+<arg>mysession</arg>
+<arg>/api/users</arg>
+<arg>data=${body}</arg>
+<arg>headers=${header}</arg>
+<doc>*DEPRECATED* Please use `POST On Session` instead.</doc>
+<status status="PASS" start="2025-04-07T17:28:44.051362" elapsed="0.419690"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.status_code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-07T17:28:44.471863" elapsed="0.001279"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-07T17:28:44.473545" elapsed="0.001045"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-04-07T17:28:44.475903" level="INFO">${status_code} = 201</msg>
+<var>${status_code}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2025-04-07T17:28:44.475043" elapsed="0.000905"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${status_code}</arg>
+<arg>201</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-07T17:28:44.476415" elapsed="0.000418"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2025-04-07T17:28:44.478071" level="INFO">${res_body} = {"name":"Abhay job=leader","id":"797","createdAt":"2025-04-07T11:58:44.367Z"}</msg>
+<var>${res_body}</var>
+<arg>${response.content}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2025-04-07T17:28:44.477319" elapsed="0.000796"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${res_body}</arg>
+<arg>id</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-07T17:28:44.478614" elapsed="0.000247"/>
+</kw>
+<status status="PASS" start="2025-04-07T17:28:43.657312" elapsed="0.822059"/>
+</test>
+<status status="PASS" start="2025-04-07T17:28:43.032337" elapsed="1.448838"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TC2 POST" id="s1" pass="1" fail="0" skip="0">TC2 POST</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-04-07T17:28:44.051412" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+</errors>
+</robot>

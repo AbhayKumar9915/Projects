@@ -1,0 +1,17 @@
+{
+    "Abhay": {
+        "name": "Abhay",
+        "address": "Bengaluru",
+        "phone": 5456651
+    },
+    "Ravi": {
+        "name": "Ravi",
+        "address": "Lucknow",
+        "phone": 156456
+    },
+    "Ruchi": {
+        "name": "Ruchi",
+        "address": "Saharanpur",
+        "phone": 464641
+    }
+}

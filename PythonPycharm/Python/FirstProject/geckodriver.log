@@ -1,0 +1,26 @@
+1737541910791	geckodriver	INFO	Listening on 127.0.0.1:62197
+1737541911319	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\ab1kumar\\AppData\\Local\\Temp\\rust_mozprofilec4HstP"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1737541912061	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1737541912355	Marionette	INFO	Listening on port 62204
+Read port: 62204
+1737541912635	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1737541915250	Marionette	INFO	Stopped listening on port 62204
+Dynamically enable window occlusion 1
+1737541971993	geckodriver	INFO	Listening on 127.0.0.1:62233
+1737541972510	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\ab1kumar\\AppData\\Local\\Temp\\rust_mozprofileY91v8V"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1737541973237	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1737541973508	Marionette	INFO	Listening on port 62240
+Read port: 62240
+1737541973609	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+1737541980976	Marionette	INFO	Stopped listening on port 62240
+JavaScript warning: https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.en_US.s7-6K1go9IM.es5.O/am=yQ2mZPgGABD_cGlAN6CRQMgAAAAAAAACAIANAABghwE/d=1/excm=_b,_tp,identifierview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlFRxS3ln8SN7GcRWmuwWFP3lJx0-Q/m=_b,_tp, line 390: Script terminated by timeout at:
+c@https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.en_US.s7-6K1go9IM.es5.O/am=yQ2mZPgGABD_cGlAN6CRQMgAAAAAAAACAIANAABghwE/d=1/excm=_b,_tp,identifierview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlFRxS3ln8SN7GcRWmuwWFP3lJx0-Q/m=_b,_tp:390:188
+
+Dynamically enable window occlusion 1

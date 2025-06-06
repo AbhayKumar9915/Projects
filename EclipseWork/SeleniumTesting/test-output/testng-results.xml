@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-17T17:13:42 IST" name="Default suite" finished-at="2025-05-17T17:13:42 IST" duration-ms="102">
+    <groups>
+    </groups>
+    <test started-at="2025-05-17T17:13:42 IST" name="Default test" finished-at="2025-05-17T17:13:42 IST" duration-ms="102">
+      <class name="ui.Annotations">
+        <test-method is-config="true" signature="loginTest()[pri:0, instance:ui.Annotations@1fa268de]" started-at="2025-05-17T17:13:42 IST" name="loginTest" finished-at="2025-05-17T17:13:42 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="connectDB()[pri:0, instance:ui.Annotations@1fa268de]" started-at="2025-05-17T17:13:42 IST" name="connectDB" finished-at="2025-05-17T17:13:42 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectDB -->
+        <test-method signature="test02()[pri:1, instance:ui.Annotations@1fa268de]" started-at="2025-05-17T17:13:42 IST" name="test02" finished-at="2025-05-17T17:13:42 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02 -->
+        <test-method is-config="true" signature="disconnectDB()[pri:0, instance:ui.Annotations@1fa268de]" started-at="2025-05-17T17:13:42 IST" name="disconnectDB" finished-at="2025-05-17T17:13:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disconnectDB -->
+        <test-method is-config="true" signature="connectDB()[pri:0, instance:ui.Annotations@1fa268de]" started-at="2025-05-17T17:13:42 IST" name="connectDB" finished-at="2025-05-17T17:13:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectDB -->
+        <test-method signature="test01()[pri:2, instance:ui.Annotations@1fa268de]" started-at="2025-05-17T17:13:42 IST" name="test01" finished-at="2025-05-17T17:13:42 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test01 -->
+        <test-method is-config="true" signature="disconnectDB()[pri:0, instance:ui.Annotations@1fa268de]" started-at="2025-05-17T17:13:42 IST" name="disconnectDB" finished-at="2025-05-17T17:13:42 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disconnectDB -->
+        <test-method is-config="true" signature="logoutTest()[pri:0, instance:ui.Annotations@1fa268de]" started-at="2025-05-17T17:13:42 IST" name="logoutTest" finished-at="2025-05-17T17:13:42 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+      </class> <!-- ui.Annotations -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,11 @@
+Libraries
+pip install selenium - to install
+pip uninstall selenium - to uninstall
+pip show selenium - to see all info
+pip list - to list all installed libraries
+
+pip install robotframework
+pip install robotframework-seleniumlibrary
+
+Extension
+test case -> .robot
